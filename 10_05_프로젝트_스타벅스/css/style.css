@@ -5,6 +5,44 @@
 
 /* header */
 #wrap #header {z-index:3;position:fixed;top:0;left:0;width:100%;height:120px;border-top:2px solid #000;border-bottom:1px solid #e5e5e5;background:#f6f5ef;}
+#wrap #header .wrap {width:1100px;height:120px;margin:0 auto;}
+#wrap #header .wrap > ul {width:100%;}
+#wrap #header .wrap > ul > li {float:left;height:120px;} 
+
+/* logo */
+#wrap #header .wrap > ul > li:nth-child(1) {width:75px;}
+#wrap #header .wrap > ul > li:nth-child(1) > h1 {padding:22.5px 0;}
+#wrap #header .wrap > ul > li:nth-child(1) > h1 > a {display:inline-block;} /* inline요소이면서 block의 성질을 띈다 */
+#wrap #header .wrap > ul > li:nth-child(1) > h1 > a > img {width:75px;height:75px;}
+
+/* aside */
+#wrap #header .wrap > ul > li:nth-child(2) {width:1025px;}
+#wrap #header .wrap > ul > li:nth-child(2) > ul {width:100%;}
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li {width:100%;}
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) {height:54px;text-align:right;} /* text-align은 무조건 inline으로 설정해야먹힘 */
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) #aside {display:inline-block;}
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) #aside > ul {width:100%;padding-top:7px;}
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) #aside > ul > li {display:inline-block;margin-left:25px;}
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) #aside > ul > li:last-child {margin:0 30px 0 15px;}
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) #aside > ul > li > a {font-size:13px;color:#555;font-weight:500;}
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) #aside > ul > li > a > img {width:20px;background:#fff;padding:5px;border:1px solid #ccc;border-radius:5px;} /* padding값은 넓이에 포함 */
+
+/* main-menu */
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) {height:66px;}
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav {text-align:right;}
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul {display:inline-block;}
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li {float:left;}
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .main-btn {display:block;padding:10px 20px 44px 20px;color:#000;font-size:13px;font-weight:500;}
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .main-btn:hover {background:#2c2a29;color:#669900;text-decoration:underline;}
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .main-btn:focus {background:#2c2a29;color:#669900;text-decoration:underline;}
+
+/* sub-menu */
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub {width:100%;}
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul {position:absolute;top:123px;left:0;width:100%;}
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li {width:100%;}
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(1) {/* 임시높이 */height:350px;background:#2c2a29;}
+#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) {/* 임시높이 */height:150px;background:url(../img/gnb_sub_txbg.jpg) repeat;}
+
 
 /* main */
 #wrap #main {z-index:2;position:relative;width:100%;margin-top:123px;}
