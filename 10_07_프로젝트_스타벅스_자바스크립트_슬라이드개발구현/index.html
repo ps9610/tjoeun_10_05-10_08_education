@@ -502,13 +502,15 @@
 
             nextBtn.onclick = function(){
                 cnt++;
-                slideWrap.style = 'left:' + (-819*cnt) + 'px';
-                if(cnt>2){
-                    setTimeout(function(){
-                        cnt > 2 ? cnt=0 : cnt; 
-                        slideWrap.style = 'left:' + (-819*cnt) + 'px';
-                }, 000);
-                }
+                cnt >= 3 ? cnt = 0 : cnt;
+                slideWrap.style = 'left:' + (-819*cnt) + 'px; transition:all 0.6s';
+                //if 제어문
+                // if(cnt>2){
+                //     setTimeout(function(){
+                //         cnt > 2 ? cnt=0 : cnt; 
+                //         slideWrap.style = 'left:' + (-819*cnt) + 'px;transition:all 0s';
+                // }, 600); /* return되는거때문에 if제어조건문만든거임 */
+                // }
             }
 
         </script>
