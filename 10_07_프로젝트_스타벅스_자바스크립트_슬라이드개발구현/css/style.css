@@ -82,7 +82,7 @@
 #wrap #main #section3 .section3-wrap {width:819px;height:658px;margin:0 auto;} /* section3의 wrapping box : 전체넓이랑 보여지는사진이랑 넓이높이가 달라서 랩핑한거임 */
 #wrap #main #section3 .section3-wrap .slide-container {position:relative;width:100%;}
 #wrap #main #section3 .section3-wrap .slide-container .slide-view {z-index:1;position:relative;width:100%;}
-#wrap #main #section3 .section3-wrap .slide-container .slide-view .slide-wrap {width:calc(819px*5);margin-left:-819px;padding:calc(105px/2) 0;}
+#wrap #main #section3 .section3-wrap .slide-container .slide-view .slide-wrap {position:relative;left:calc(-819px*0);width:calc(819px*5);margin-left:-819px;padding:calc(105px/2) 0;}
 #wrap #main #section3 .section3-wrap .slide-container .slide-view .slide-wrap > li {float:left;width:819px;} /* li는 갯수가 많으니까 넓이 819 */
 #wrap #main #section3 .section3-wrap .slide-container .slide-view .slide-wrap > li > img {width:100%;}
 /* slide-arrow */
