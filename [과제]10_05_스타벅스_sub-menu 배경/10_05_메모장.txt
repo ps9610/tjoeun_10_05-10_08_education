@@ -1,0 +1,10 @@
+tab 순서?
+돔트리정보읽어서브라우저에보여줌=파싱=랜더링
+포지션은 정해주지 않으면 바로 그 위 부모한테 감
+absolute, fixed / relative
+
+overflow-y : scroll :웹을 제작할 때 항상 스크롤바의 위치가 존재하게 해라(body에도 같이 해주면 스크롤바 2개생김)
+            / auto / hidden
+
+common.css
+    body{font:글꼴두께 글꼴크기 /(1=100%)줄간격 "굴림", "돋움";}
