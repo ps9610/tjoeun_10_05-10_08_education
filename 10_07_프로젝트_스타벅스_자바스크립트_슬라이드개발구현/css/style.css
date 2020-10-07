@@ -80,11 +80,21 @@
 #wrap #main #section3 {overflow:hidden;display:block;width:100%;height:658px;border-top:1px solid #f6f5ef;background:#f6f5ef;}
 /* main-slide */
 #wrap #main #section3 .section3-wrap {width:819px;height:658px;margin:0 auto;} /* section3의 wrapping box : 전체넓이랑 보여지는사진이랑 넓이높이가 달라서 랩핑한거임 */
-#wrap #main #section3 .section3-wrap .slide-container {width:100%;}
-#wrap #main #section3 .section3-wrap .slide-container .slide-view {width:100%;}
+#wrap #main #section3 .section3-wrap .slide-container {position:relative;width:100%;}
+#wrap #main #section3 .section3-wrap .slide-container .slide-view {z-index:1;position:relative;width:100%;}
 #wrap #main #section3 .section3-wrap .slide-container .slide-view .slide-wrap {width:calc(819px*5);margin-left:-819px;padding:calc(105px/2) 0;}
 #wrap #main #section3 .section3-wrap .slide-container .slide-view .slide-wrap > li {float:left;width:819px;} /* li는 갯수가 많으니까 넓이 819 */
 #wrap #main #section3 .section3-wrap .slide-container .slide-view .slide-wrap > li > img {width:100%;}
+/* slide-arrow */
+#wrap #main #section3 .section3-wrap .slide-container .prevBtn-wrap {z-index:2;position:absolute;top:50%;left:-100px;width:55px;height:55px;margin-top:-55px;}
+#wrap #main #section3 .section3-wrap .slide-container .nextBtn-wrap {z-index:2;position:absolute;top:50%;right:-100px;width:55px;height:55px;margin-top:-55px;}
+#wrap #main #section3 .section3-wrap .slide-container .prevBtn-wrap > a,
+#wrap #main #section3 .section3-wrap .slide-container .nextBtn-wrap > a {display:block;width:55px;height:55px;border-radius:50%;border:2px solid #222;text-align:center;background:transparent;transition:all 0.3s;}
+#wrap #main #section3 .section3-wrap .slide-container .prevBtn-wrap > a:hover,
+#wrap #main #section3 .section3-wrap .slide-container .nextBtn-wrap > a:hover {background:#fff;}
+#wrap #main #section3 .section3-wrap .slide-container .prevBtn-wrap > a > img,
+#wrap #main #section3 .section3-wrap .slide-container .nextBtn-wrap > a > img {height:26px;padding:14.5px 0;}
+
 /* section4 */
 #wrap #main #section4 {width:100%;height:167px;padding:30px 0 40px 0;background:#1e3932;}/* padding, margin, font 등 한줄로 쓸수있는건 한줄로쓰기 */
 

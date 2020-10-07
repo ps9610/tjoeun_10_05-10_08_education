@@ -478,13 +478,18 @@
                 <div class="slide-container"> <!-- 슬라이드만들때 항상 이렇게 만들기(컨테이너 - 뷰) -->
                     <div class="slide-view">
                         <ul class="slide-wrap fixedclear">
-                            <li><img src="./img/slide03.jpg" alt=""></li>
-                            <li><img src="./img/slide01.jpg" alt=""></li>
-                            <li><img src="./img/slide02.jpg" alt=""></li>
-                            <li><img src="./img/slide03.jpg" alt=""></li>
-                            <li><img src="./img/slide01.jpg" alt=""></li>
+                            <li><img src="./img/slide03.jpg" alt="slide03"></li>
+                            <li><img src="./img/slide01.jpg" alt="slide01"></li>
+                            <li><img src="./img/slide02.jpg" alt="slide02"></li>
+                            <li><img src="./img/slide03.jpg" alt="slide03"></li>
+                            <li><img src="./img/slide01.jpg" alt="slide01"></li>
                         </ul>
-                    </div>
+                    </div> <!-- slide-view z-index:1 -->
+
+                    <span class="nextBtn-wrap"><a href="javascript:void(0);" class="nextBtn" title="nextBtn"><img src="./img/arrow_right_on.png" alt="next"></a></span><!-- 컨테이너가 모든 슬라이드를 감싸고 있으니까 여기다가 같이 z-index: 2 하려고 -->
+                    <span class="prevBtn-wrap"><a href="javascript:void(0);" class="prevBtn" title="prevBtn"><img src="./img/arrow_left_on.png" alt="prev"></a></span>
+                    <!-- 약식 1)javascript: ; 2)javascript:" -->
+                        
                 </div>
             </div>
         </section>
