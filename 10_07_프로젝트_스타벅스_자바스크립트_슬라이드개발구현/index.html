@@ -493,8 +493,24 @@
                 </div>
             </div>
         </section>
-        <script>
-            
+
+        <!-- /* nextbtn클릭 ->slide left를 -819px씩 하겠다 */ -->
+        <script> 
+            var nextBtn = document.querySelector('.nextBtn');
+            var slideWrap = document.querySelector('.slide-wrap'); 
+            var cnt = 0; 
+
+            nextBtn.onclick = function(){
+                cnt++;
+                slideWrap.style = 'left:' + (-819*cnt) + 'px';
+                if(cnt>2){
+                    setTimeout(function(){
+                        cnt > 2 ? cnt=0 : cnt; 
+                        slideWrap.style = 'left:' + (-819*cnt) + 'px';
+                }, 000);
+                }
+            }
+
         </script>
 
         <section id="section4">

@@ -89,7 +89,7 @@
 #wrap #main #section3 .section3-wrap .slide-container .prevBtn-wrap {z-index:2;position:absolute;top:50%;left:-100px;width:55px;height:55px;margin-top:-55px;}
 #wrap #main #section3 .section3-wrap .slide-container .nextBtn-wrap {z-index:2;position:absolute;top:50%;right:-100px;width:55px;height:55px;margin-top:-55px;}
 #wrap #main #section3 .section3-wrap .slide-container .prevBtn-wrap > a,
-#wrap #main #section3 .section3-wrap .slide-container .nextBtn-wrap > a {display:block;width:55px;height:55px;border-radius:50%;border:2px solid #222;text-align:center;background:transparent;transition:all 0.3s;}
+#wrap #main #section3 .section3-wrap .slide-container .nextBtn-wrap > a {display:block;width:55px;height:55px;border-radius:50%;border:2px solid #222;text-align:center;background:transparent;}
 #wrap #main #section3 .section3-wrap .slide-container .prevBtn-wrap > a:hover,
 #wrap #main #section3 .section3-wrap .slide-container .nextBtn-wrap > a:hover {background:#fff;}
 #wrap #main #section3 .section3-wrap .slide-container .prevBtn-wrap > a > img,
