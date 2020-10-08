@@ -8,7 +8,7 @@
     <meta name="Viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Title" content="자바스크립트 & 제이쿼리">
     <meta name="Publisher" content="프론트엔드 박소혜">
-    <meta name="Author-date" content="2020-10-07"> 
+    <meta name="Author-date" content="2020-10-08"> 
     <meta name="Author" content="프론트엔드 박소혜">
     <meta name="Copyright" content="프론트엔드 박소혜">
     <meta name="Keywords" content="자바스크립트 & 제이쿼리">
@@ -139,27 +139,43 @@
         var outPut1 = document.querySelector(".output-1");
         var cnt = 0;
 
-            btnAdd1.onclick = function(){
-                cnt++;
+            btnAdd1.onclick = function(){ //Event(이벤트) Listener(리스너)
+                cnt++;                    //이벤트 핸들러(Event Handler)
                 cnt >= 10 ? cnt = 1 : cnt;
                 outPut1.innerHTML = cnt;
             }
             */
 
-           /*
+           
             var btnAdd1 = document.querySelector(".btn-add-1");
             var outPut1 = document.querySelector(".output-1");
-            var cnt = 10;
-            
+            var cnt = 0;
+           
             outPut1.innerHTML = cnt; 
                 //웹 문서 로딩 시 초기값 출력(화면에 보여짐)
-            
-                btnAdd1.onclick = function(){
+
+                //매개변수 : parameter
+                                 // 👇 = function(e) : 약자로 e만 써도 됨
+                btnAdd1.onclick = function(e){ //Event(이벤트) Listener(리스너)
+                    e.preventDefault(); //프리벤트디펄트
+                    e.stopPropagation(); //프로파게이션
                     cnt--;
-                    cnt < 1 ? cnt = 10 : cnt;
+                    cnt < 0 ? cnt = 10 : cnt;
+                    outPut1.innerHTML = cnt;
+                    console.log( e.target ); // = toElement (아무거나 써도 됨) 
+                    console.log( e.toElement ); // = target (아무거나 써도 됨)
+                    console.log( e.type );
+                                // 👆 위 3개 = 이벤트 속성을 알아내는 방법
+                }
+                /* 
+               // btnAdd1.ondblclick = function(){ //Event(이벤트) Listener(리스너) : 더블클릭
+               // btnAdd1.onmouseover = function(){ //Event(이벤트) Listener(리스너) : 마우스만 올리기
+                  btnAdd1.onmouseout = function(){ //Event(이벤트) Listener(리스너) : 마우스 빼기
+                cnt++;
+                    cnt > 10 ? cnt = 1 : cnt;
                     outPut1.innerHTML = cnt;
                 }
-                */
+            */
   /*           
                 addEventListner 사용해봄 
             var btnAdd1 = document.querySelector(".btn-add-1");
