@@ -21,8 +21,8 @@
 
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css">
-   
-    <!-- 오픈소스 자바스크립트 라이브러리 jQuery.js node.js vue.js react.js angula.js-->  
+    <!-- 오픈소스 -->
+    
     <script src="./js/lib/jquery-1.12.4.min.js"></script>
     <script src="./js/lib/prefixfree.min.js"></script>
     <script src="./js/lib/jquery.easing.1.3.js"></script>
@@ -47,16 +47,21 @@
     <![endif]-->
 <!--
     <script src="./js/script.js"></script> <!-- 외부링크연결 | 권장사항입니다. --
+    <!-- 원래 body태그 맨 밑에 써주는게 기본사항이지만 window.onload 속성을 사용해서 head에 넣어버림 --
 -->
     
 </head>
 <body>
     
     <div id="scriptWrap">
-    
-    </div>            
-    
-    <script src="./js/script.js"></script>
+<!--
+        <div id="scriptWrap" onclick="fnFirst();"> = 인라인 이벤트   
+            해석: id에서 바로 자바스크립트를 호출해버림 -->
 
+        </div>
+        <!-- id에 합성어 두개 = 카멜케이스기법 
+            / 포트폴리오: 네이밍, 랩핑, 폴더/파일관리 / 접근성 / 웹표준 / 크로스브라우징 | 자바스크립트: 네이밍, 알고리즘, 프로그래밍 -->
+        
+        <script src="./js/script.js"></script> <!-- 외부링크연결 | 권장사항입니다. -->
 </body>
 </html>
