@@ -125,10 +125,6 @@ $(function(){
     //$('#scriptWrap').css({color:'#c00','font-size':50,'text-align':'center'}) 이렇게 써도 됨
  
 //})(jQuery,window,document/* argument(전달인자) */);
-*/
-
-
-
 
 
 /* ㅜㅜ */
