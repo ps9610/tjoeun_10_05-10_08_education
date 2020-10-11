@@ -16,3 +16,190 @@
 우선순위 사칙연산은 
 1) 괄호
 2) ++ㅁ > = > ㅁ++
+
+
+        // BOM - Browser Object Modelling
+        // DOM - Document Object Modelling
+        // M V C 모델링 > SERVER API
+        // Modelling(HTML) > View(CSS) > Control(Javascript & JQuery)
+        // 프로그램 실행 방법 - 스토리 보드
+        // (선택자(Selector) 버튼(btn-add-1)을 
+        // 클릭(onclick, click)하면
+        // 클릭할 때 마다 1씩 증가 수식에 의해서 👈 이제 이 수식을 만들거임
+        // 출력상자(output-1)에 1씩 증가한 숫자가 출력된다.
+
+        // 1. 버튼 클릭 이벤트 등록
+        // document.querySelector('css선택자').onclick = funtion(){}
+        // function(){ 
+        // } //함수의 의미 블록단위 묶어서 실행      /👈 프로그램을 실행할 이벤트핸들러라고 생각하면됨 (일련의 전체과정을 실행하게함)/
+        
+        /*
+        document.querySelector(".btn-add-1").onclick = function(){
+            alert('click Event Hello Javascript!')
+        }
+        */
+
+        // document : 웹문서
+        // querySelector : DOM객체(ID(식별자라고 함), CLASS, TAG name 등)
+        // onclick: 이벤트(Event) 클릭, 더블클릭, 마우스오버, 마우스아웃 등
+        // function(){} : 그룹단위(블록단위 함수)의 처리할 이벤트 핸들러 또는 이벤트 리스너라고 함.
+                          // 함수 입력 방법(중괄호 -> 엔터하는거 중요)
+        // alert(): 경고창 출력 메시지 창 - 클릭하면 실행 할 이벤트 리스너(핸들러) 입니다.
+
+      // document.querySelector("btn-add-1").onclick
+      // 👆 DOM 구조를 따라 제일 조상부터 쓴거임 :"웹문서전체에서 뒤에있는거를 읽어라."
+                     //👆 자바스크립트이면서 제이쿼리처럼 쉽게쓸수있음 :"선택자를 인식함=버튼을누를거니까버튼클래스써줌"
+                                             //👆 어떤 이벤트를 쓸 지 입력해주는거임 :"onclick=1)일단 클릭하고 2) = function의 내용을 들을 준비가 됨"
+      
+      // 1씩 증가 출력 이벤트
+      // var 변수 선언 접두어
+      // 증감 변수에서는 반드시 초기값 설정
+      // 누승 곱하기는 반드시 초기값 1로 설정
+    
+    /*
+      연습 1]
+      var a = 0;
+      document.querySelector(".btn-add-1").onclick = function(){
+        a += 2; 
+        document.querySelector(".output-1").innerHTML = a;
+      }
+    */
+     /*
+      var a = 0; // 👈a라는 변수에 0을 저장
+                                                        //👇"다음 {} 안을 실행하세요."
+      document.querySelector(".btn-add-1").onclick = function(){
+        a++; 
+        document.querySelector(".output-1").innerHTML = a
+        //👆 1)어디다가 출력할거니?
+                                            //2)👆 HTML 안에 있는
+                //👆 3)output-1이라는 곳에 출력할거야
+                                                        //👆 4)뭐를 출력할건데? a라는 것을 출력할거야.
+      }
+      */
+
+    /*
+    연습 2]
+    var a = 0;
+      document.querySelector(".btn-add-1").onclick = function(){
+        a += 2; 
+        document.querySelector(".output-1").innerHTML = a; //마크업(html)을 컨트롤 
+        document.querySelector(".output-1").style = "color:#c00;font-size:60px;" //스타일(css)을 컨트롤
+      }
+      */
+    
+    // document.querySelector -> 코딩 길이가 길어서 변수에 할당(대입)하고 정리.
+    // 자바스크립트는 변수 네이밍 규칙이 카멜케이스를 쓴다. 
+    // var btnAdd1 = document.querySelector('.btn-add-1');
+    // var outPut1 = document.querySelector('.output-1');
+            //👆카멜케이스로 표기해서 클래스랑 이름이 다른거임
+/*
+        var a = 0;
+        btnAdd1.onclick = function(){
+            a +=10;
+            outPut1.innerHTML = a;
+        }
+*/
+        // 버튼을 클릭해서 숫자가 1씩 증가
+        // 증가된 숫자가 10을 초과하면 경고메세지 띄울거임
+        /*
+        var btnAdd1 = document.querySelector(".btn-add-1");
+        var outPut1 = document.querySelector(".output-1");
+        var cnt = 0;
+
+            btnAdd1.onclick = function(){ //Event(이벤트) Listener(리스너)
+                cnt++;                    //이벤트 핸들러(Event Handler)
+                cnt >= 10 ? cnt = 1 : cnt;
+                outPut1.innerHTML = cnt;
+            }
+            */
+
+           
+            var btnAdd1 = document.querySelector(".btn-add-1");
+            var outPut1 = document.querySelector(".output-1");
+            var cnt = 0;
+           
+            outPut1.innerHTML = cnt; 
+                //웹 문서 로딩 시 초기값 출력(화면에 보여짐)
+
+                //매개변수 : parameter
+                                 // 👇 = function(e) : 약자로 e만 써도 됨
+                btnAdd1.onclick = function(e){ //Event(이벤트) Listener(리스너)
+                    e.preventDefault(); //프리벤트디펄트
+                    e.stopPropagation(); //프로파게이션
+                    cnt--;
+                    cnt < 0 ? cnt = 10 : cnt;
+                    outPut1.innerHTML = cnt;
+                    console.log( e.target ); // = toElement (아무거나 써도 됨) 
+                    console.log( e.toElement ); // = target (아무거나 써도 됨)
+                    console.log( e.type );
+                                // 👆 위 3개 = 이벤트 속성을 알아내는 방법
+                }
+                /* 
+               // btnAdd1.ondblclick = function(){ //Event(이벤트) Listener(리스너) : 더블클릭
+               // btnAdd1.onmouseover = function(){ //Event(이벤트) Listener(리스너) : 마우스만 올리기
+                  btnAdd1.onmouseout = function(){ //Event(이벤트) Listener(리스너) : 마우스 빼기
+                cnt++;
+                    cnt > 10 ? cnt = 1 : cnt;
+                    outPut1.innerHTML = cnt;
+                }
+            */
+  /*           
+                addEventListner 사용해봄 
+            var btnAdd1 = document.querySelector(".btn-add-1");
+            var outPut1 = document.querySelector(".output-1");
+
+                function change(){
+                var cnt = 0;
+                    cnt++;
+                    cnt = 1 ? outPut1.style.color="#c99" : outPut1.style.color="#000";
+                    outPut1.innerHTML=cnt;
+                }
+
+                btnAdd1.addEventListener("click", change); */
+            /* 
+            📌 정리 
+            html에서 필요한 요소 가져오기
+            필요한 요소를 변수로 만들기(코딩이 길어지니까)
+            변수에 필요한 기능 넣어 함수만들기 */
+
+
+
+
+
+
+
+
+
+
+ECMAScript(에크마 스크립트)의 키워드를 잠시 살펴볼게요~
+
+var 키워드
+
+변수 선언시 사용
+
+변수 종류 2가지 ( 전역 변수, 로컬 변수 ) 전역변수와 로컬변수로 구분하는 이유는
+
+스코프(scope)가 달라지기 때문이에요!
+
+일반적으로 javascript는 블록 스코프가 아닌 함수 스코프(function scope)를 따르게되는데
+
+ES6는 변수를 설정하기 위한 새로운 2가지 키워드를 제공을 해줘요! ( let 과 const ) 
+
+let 키워드
+
+var 키워드의 문제점 해결 목적으로 등장을했어요
+
+let 키워드를 사용하면 함수 스코프가 아닌 블록 스코프를 따르게되며
+
+때문에 블록밖에 동일한 이름의 변수가 있어도 scope가 다르기 때문에 변수에 각각 값을 설정할 수 있게되죠
+
+let 변수는 호이스팅(hoisting)되지 않는다고해요
+
+const 키워드
+상수 작성시 사용하며
+const 변수는 선언만 할 수 없으며 반드시 초기화가 필요해요.
+const 변수는 값을 변경할 수 없는 것만 제외하고 let 변수와 기능이 동일하다고 보시면되요.
+
+이정도만 봐도 자바스크립트의 불편한점이 많이 해소되죠?
+
+이상 소소키의 ECMAScript(에크마 스크립트) 소개 였습니다~

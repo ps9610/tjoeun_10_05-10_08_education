@@ -68,38 +68,21 @@
 
 /* section1 */ /* 높이가 일정하지 않아서 absolute 써줄거임 */
 #wrap #main #section1 {width:100%;height:646px;background:url(../img/section1.jpg) no-repeat 50% 0;background-size:100% 100%;}
-#wrap #main #section1 .wrap {position:relative;width:1100px;height:646px;margin:0 auto;}
-#wrap #main #section1 .wrap  span.ani-1 {opacity:0;position:absolute;bottom:-15px;left:197px;display:block;width:358.047px;height:485.219px;}
-#wrap #main #section1 .wrap  span.ani-1 > a {display:block;}
-#wrap #main #section1 .wrap  span.ani-1 > a > img {width:100%;}
-#wrap #main #section1 .wrap  span.ani-1 strong {position:absolute;left:-140px;bottom:110px;width:190px;height:46px;}
-#wrap #main #section1 .wrap  span.ani-1 strong img {width:100%;}
-/* span이 인라인요소라서 클래스 이미 써줬지만 헷갈리니까 그냥 한 번 더 써준거임 */
-#wrap #main #section1 .wrap  span.ani-2 {opacity:0;position:absolute;bottom:70px;left:415px;display:block;width:379.047px;height:426.234px;}
-#wrap #main #section1 .wrap  span.ani-2 > a {display:block;}
-#wrap #main #section1 .wrap  span.ani-2 > a > img {width:100%;}
-#wrap #main #section1 .wrap  span.ani-2 strong {position:absolute;left:70px;top:0;width:132.047px;height:76.719px;}
-#wrap #main #section1 .wrap  span.ani-2 strong img {width:100%;}
-
-#wrap #main #section1 .wrap  span.ani-3 {opacity:0;position:absolute;bottom:5px;left:697px;display:block;width:328.016px;height:444.984px;}
-#wrap #main #section1 .wrap  span.ani-3 > a {display:block;}
-#wrap #main #section1 .wrap  span.ani-3 > a > img {width:100%;}
-#wrap #main #section1 .wrap  span.ani-3 strong {position:absolute;left:20px;top:-46px;width:124.016px;height:80.094px;}
-#wrap #main #section1 .wrap  span.ani-3 strong img {width:100%;}
-
-#wrap #main #section1 .wrap  span.ani-4 {opacity:0;position:absolute;bottom:40px;left:890px;display:block;width:304.031px;height:503.797px;}
-#wrap #main #section1 .wrap  span.ani-4 > a {display:block;}
-#wrap #main #section1 .wrap  span.ani-4 > a > img {width:100%;}
-#wrap #main #section1 .wrap  span.ani-4 strong {position:absolute;left:0;bottom:0;width:206.031px;height:90.672px;}
-#wrap #main #section1 .wrap  span.ani-4 strong img {width:100%;}
-
-#wrap #main #section1 .wrap  span.ani-5 {opacity:0;position:absolute;top:70px;left:0;display:block;width:382px;height:134px;}
-#wrap #main #section1 .wrap  span.ani-5 strong {width:100%;}
-#wrap #main #section1 .wrap  span.ani-5 strong img {width:100%;}
-
-#wrap #main #section1 .wrap  span.ani-6 {opacity:0;position:absolute;top:234px;left:0;display:block;width:123px;height:36px;border:2px solid #fff;border-radius:4px;font-weight:600;;}
-#wrap #main #section1 .wrap  span.ani-6 a {display:block;line-height:36px;color:#fff;text-align:center;transition:all 0.4s;}
-#wrap #main #section1 .wrap  span.ani-6 a:hover {background:#e5bb95;color:#000;text-decoration:underline;}
+#wrap #main #section1 .wrap {position:relative;width:1100px;height:646px;margin:0 auto;background:#d55;}
+/* 음료 사진 */
+#wrap #main #section1 .wrap .ani-1 {position:absolute;display:block;bottom:-13px;left:197px;width:358.050px;height:485.225px;}
+#wrap #main #section1 .wrap .ani-1 > a {display:block;}
+#wrap #main #section1 .wrap .ani-1 > a > img {width:358.050px;height:485.225px;}
+/* 사진 제목 */
+#wrap #main #section1 .wrap .ani-1 > strong {position:absolute;bottom:-12px;left:-138px;width:190.012px;height:87.338px;}
+#wrap #main #section1 .wrap .ani-1 > strong > img {width:100%;}
+/* 음료 사진 */
+#wrap #main #section1 .wrap .ani-2 {position:absolute;display:block;bottom:110px;left:424px;width:379.050px;height:426.237px;}
+#wrap #main #section1 .wrap .ani-2 > a {display:block;}
+#wrap #main #section1 .wrap .ani-2 > a > img {width:358.050px;height:485.225px;}
+/* 사진 제목 */
+#wrap #main #section1 .wrap .ani-2 > strong {position:absolute;bottom:-12px;left:-138px;width:190.012px;height:87.338px;}
+#wrap #main #section1 .wrap .ani-2 > strong > img {width:100%;}
 /* section2 */
 #wrap #main #section2 {width:100%;}
 #wrap #main #section2 > ul {width:100%;} /* > = 절대경로 */
