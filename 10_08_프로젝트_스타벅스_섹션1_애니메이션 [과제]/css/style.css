@@ -83,6 +83,8 @@
 /* 사진 제목 */
 #wrap #main #section1 .wrap .ani-2 > strong {position:absolute;bottom:-12px;left:-138px;width:190.012px;height:87.338px;}
 #wrap #main #section1 .wrap .ani-2 > strong > img {width:100%;}
+#wrap #main #section1 .wrap .ani-2 > strong > img {width:100%;}
+
 /* section2 */
 #wrap #main #section2 {width:100%;}
 #wrap #main #section2 > ul {width:100%;} /* > = 절대경로 */
