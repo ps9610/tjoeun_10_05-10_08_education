@@ -1,117 +1,136 @@
-@charset "UTF-8";
+    @charset "UTF-8";
 
-/* wrap */
-#wrap {z-index:1;position:relative;width:100%;}
+    /* wrap */
+    #wrap {z-index:1;position:relative;width:100%;}
 
-/* header */
-#wrap #header {z-index:3;position:fixed;top:0;left:0;width:100%;height:120px;border-top:2px solid #000;border-bottom:1px solid #e5e5e5;background:#f6f5ef;}
-#wrap #header .wrap {width:1100px;height:120px;margin:0 auto;}
-#wrap #header .wrap > ul {width:100%;}
-#wrap #header .wrap > ul > li {float:left;height:120px;} 
+    /* header */
+    #wrap #header {z-index:3;position:fixed;top:0;left:0;width:100%;height:120px;border-top:2px solid #000;border-bottom:1px solid #e5e5e5;background:#f6f5ef;}
+    #wrap #header .wrap {width:1100px;height:120px;margin:0 auto;}
+    #wrap #header .wrap > ul {width:100%;}
+    #wrap #header .wrap > ul > li {float:left;height:120px;} 
 
-/* logo */
-#wrap #header .wrap > ul > li:nth-child(1) {width:75px;}
-#wrap #header .wrap > ul > li:nth-child(1) > h1 {padding:22.5px 0;}
-#wrap #header .wrap > ul > li:nth-child(1) > h1 > a {display:inline-block;} /* inline요소이면서 block의 성질을 띈다 */
-#wrap #header .wrap > ul > li:nth-child(1) > h1 > a > img {width:75px;height:75px;}
+    /* logo */
+    #wrap #header .wrap > ul > li:nth-child(1) {width:75px;}
+    #wrap #header .wrap > ul > li:nth-child(1) > h1 {padding:22.5px 0;}
+    #wrap #header .wrap > ul > li:nth-child(1) > h1 > a {display:inline-block;} /* inline요소이면서 block의 성질을 띈다 */
+    #wrap #header .wrap > ul > li:nth-child(1) > h1 > a > img {width:75px;height:75px;}
 
-/* aside */
-#wrap #header .wrap > ul > li:nth-child(2) {width:1025px;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul {width:100%;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li {width:100%;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) {height:54px;text-align:right;} /* text-align은 무조건 inline으로 설정해야먹힘 */
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) #aside {display:inline-block;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) #aside > ul {width:100%;padding-top:7px;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) #aside > ul > li {display:inline-block;margin-left:25px;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) #aside > ul > li:last-child {margin:0 30px 0 15px;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) #aside > ul > li > a {font-size:13px;color:#555;font-weight:500;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) #aside > ul > li > a > img {width:20px;background:#fff;padding:5px;border:1px solid #ccc;border-radius:5px;} /* padding값은 넓이에 포함 */
+    /* aside */
+    #wrap #header .wrap > ul > li:nth-child(2) {width:1025px;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul {width:100%;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li {width:100%;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) {height:54px;text-align:right;} /* text-align은 무조건 inline으로 설정해야먹힘 */
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) #aside {display:inline-block;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) #aside > ul {width:100%;padding-top:7px;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) #aside > ul > li {display:inline-block;margin-left:25px;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) #aside > ul > li:last-child {margin:0 30px 0 15px;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) #aside > ul > li > a {font-size:13px;color:#555;font-weight:500;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(1) #aside > ul > li > a > img {width:20px;background:#fff;padding:5px;border:1px solid #ccc;border-radius:5px;} /* padding값은 넓이에 포함 */
 
-/* main-menu */
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) {height:66px;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav {text-align:right;} 
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul {display:inline-block;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li {float:left;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .main-btn {display:block;padding:10px 20px 44px 20px;color:#000;font-size:13px;font-weight:500;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .main-btn:hover {background:#2c2a29;color:#669900;text-decoration:underline;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .main-btn:focus {background:#2c2a29;color:#669900;text-decoration:underline;}
+    /* main-menu */
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) {height:66px;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav {text-align:right;} 
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul {display:inline-block;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li {float:left;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .main-btn {display:block;padding:10px 20px 44px 20px;color:#000;font-size:13px;font-weight:500;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .main-btn:hover {background:#2c2a29;color:#669900;text-decoration:underline;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .main-btn:focus {background:#2c2a29;color:#669900;text-decoration:underline;}
 
-/* sub-menu */                                                  /* 👇nav(부모):text-align=right, .sub(자손)가 부모의 성질을 가져왔으니 따로 고쳐줘됨 left로*/                    
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub {display:none;position:absolute;top:121px;left:0;width:100%;text-align:left;} /* top,left = 0 :항상 상단 모서리에서 나오니까 */
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li:hover .sub {display:block;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul {width:100%;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li {width:100%;} /* 총 2행(행이라 float 아님) */
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li .sub-wrap {width:1100px;margin:0 auto;padding:30px 0;}
-/* 1행(top) */
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(1) {background:#2c2a29;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(1) .sub-wrap > ul {width:100%;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(1) .sub-wrap > ul > li {float:left;width:20%;} /* 칸 6칸 너비 20% 5개 옆으로 나열 그리고 1개는 밑으로 떨어짐 */
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(1) .sub-wrap > ul > li ul {width:100%;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(1) .sub-wrap > ul > li ul li {width:100%;line-height:22px;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(1) .sub-wrap > ul > li ul li a {color:#999;font-size:12px;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(1) .sub-wrap > ul > li ul li:first-child a {font-weight:600;color:#fff;font-size:13px;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(1) .sub-wrap > ul > li ul li a:hover {text-decoration:underline;}
+    /* sub-menu */                                                  /* 👇nav(부모):text-align=right, .sub(자손)가 부모의 성질을 가져왔으니 따로 고쳐줘됨 left로*/                    
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub {display:none;position:absolute;top:121px;left:0;width:100%;text-align:left;} /* top,left = 0 :항상 상단 모서리에서 나오니까 */
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li:hover .sub {display:block;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul {width:100%;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li {width:100%;} /* 총 2행(행이라 float 아님) */
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li .sub-wrap {width:1100px;margin:0 auto;padding:30px 0;}
+    /* 1행(top) */
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(1) {background:#2c2a29;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(1) .sub-wrap > ul {width:100%;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(1) .sub-wrap > ul > li {float:left;width:20%;} /* 칸 6칸 너비 20% 5개 옆으로 나열 그리고 1개는 밑으로 떨어짐 */
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(1) .sub-wrap > ul > li ul {width:100%;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(1) .sub-wrap > ul > li ul li {width:100%;line-height:22px;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(1) .sub-wrap > ul > li ul li a {color:#999;font-size:12px;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(1) .sub-wrap > ul > li ul li:first-child a {font-weight:600;color:#fff;font-size:13px;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(1) .sub-wrap > ul > li ul li a:hover {text-decoration:underline;}
 
-/* 2행(bottom) */
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) {background:url(../img/gnb_sub_txbg.jpg) repeat;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) .sub-wrap > ul {width:100%;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) .sub-wrap > ul > li {width:100%;line-height:18px;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) .sub-wrap > ul > li:nth-child(3) {padding-top:10px;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) .sub-wrap > ul > li:nth-child(even) {color:#64a70b;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) .sub-wrap > ul > li {font-size:12px;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) .sub-wrap > ul > li:nth-child(odd) a {color:#999;font-weight:bold;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) .sub-wrap > ul > li:nth-child(odd) a:hover {text-decoration:underline;}
-#wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) .sub-wrap > ul > li:nth-child(odd) a img {vertical-align:middle;margin-left:6px;padding-bottom:4px;}
+    /* 2행(bottom) */
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) {background:url(../img/gnb_sub_txbg.jpg) repeat;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) .sub-wrap > ul {width:100%;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) .sub-wrap > ul > li {width:100%;line-height:18px;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) .sub-wrap > ul > li:nth-child(3) {padding-top:10px;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) .sub-wrap > ul > li:nth-child(even) {color:#64a70b;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) .sub-wrap > ul > li {font-size:12px;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) .sub-wrap > ul > li:nth-child(odd) a {color:#999;font-weight:bold;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) .sub-wrap > ul > li:nth-child(odd) a:hover {text-decoration:underline;}
+    #wrap #header .wrap > ul > li:nth-child(2) > ul > li:nth-child(2) #nav > ul > li .sub > ul > li:nth-child(2) .sub-wrap > ul > li:nth-child(odd) a img {vertical-align:middle;margin-left:6px;padding-bottom:4px;}
 
-/* main */
-#wrap #main {z-index:2;position:relative;width:100%;margin-top:123px;}
+    /* main */
+    #wrap #main {z-index:2;position:relative;width:100%;margin-top:123px;}
 
-/* section1 */ /* 높이가 일정하지 않아서 absolute 써줄거임 */
-#wrap #main #section1 {width:100%;height:646px;background:url(../img/section1.jpg) no-repeat 50% 0;background-size:100% 100%;}
-#wrap #main #section1 .wrap {position:relative;width:1100px;height:646px;margin:0 auto;background:#d55;}
-/* 음료 사진 */
-#wrap #main #section1 .wrap .ani-1 {position:absolute;display:block;bottom:-13px;left:197px;width:358.050px;height:485.225px;}
-#wrap #main #section1 .wrap .ani-1 > a {display:block;}
-#wrap #main #section1 .wrap .ani-1 > a > img {width:358.050px;height:485.225px;}
-/* 사진 제목 */
-#wrap #main #section1 .wrap .ani-1 > strong {position:absolute;bottom:-12px;left:-138px;width:190.012px;height:87.338px;}
-#wrap #main #section1 .wrap .ani-1 > strong > img {width:100%;}
-/* 음료 사진 */
-#wrap #main #section1 .wrap .ani-2 {position:absolute;display:block;bottom:110px;left:424px;width:379.050px;height:426.237px;}
-#wrap #main #section1 .wrap .ani-2 > a {display:block;}
-#wrap #main #section1 .wrap .ani-2 > a > img {width:358.050px;height:485.225px;}
-/* 사진 제목 */
-#wrap #main #section1 .wrap .ani-2 > strong {position:absolute;bottom:-12px;left:-138px;width:190.012px;height:87.338px;}
-#wrap #main #section1 .wrap .ani-2 > strong > img {width:100%;}
-#wrap #main #section1 .wrap .ani-2 > strong > img {width:100%;}
+    /* section1 */ /* 높이가 일정하지 않아서 absolute 써줄거임 */
+    #wrap #main #section1 {width:100%;height:646px;background:url(../img/section1.jpg) no-repeat 50% 0;background-size:100% 100%;}
+    #wrap #main #section1 .wrap {position:relative;width:1100px;height:646px;margin:0 auto;}
+    /* 음료 사진 */
+    #wrap #main #section1 .wrap .ani-1 {position:absolute;display:block;bottom:-13px;left:197px;width:358.050px;height:485.225px;}
+    #wrap #main #section1 .wrap .ani-1 > a {display:block;}
+    #wrap #main #section1 .wrap .ani-1 > a > img {width:358.050px;height:485.225px;}
+    /* 사진 제목 */
+    #wrap #main #section1 .wrap .ani-1 > strong {position:absolute;bottom:73px;left:-135px;width:190.012px;height:87.338px;}
+    #wrap #main #section1 .wrap .ani-1 > strong > img {width:100%;}
+    /* 음료 사진 */
+    #wrap #main #section1 .wrap .ani-2 {position:absolute;display:block;bottom:64px;left:419px;width:379.050px;height:426.237px;}
+    #wrap #main #section1 .wrap .ani-2 > a {display:block;}
+    #wrap #main #section1 .wrap .ani-2 > a > img {width:100%;height:100%;}
+    /* 사진 제목 */
+    #wrap #main #section1 .wrap .ani-2 > strong {position:absolute;bottom:348px;left:73px;width:132.047px;height:76.719px;}
+    #wrap #main #section1 .wrap .ani-2 > strong > img {width:100%;}
+    /* 음료 사진 */
+    #wrap #main #section1 .wrap .ani-3 {position:absolute;display:block;bottom:3px;left:704px;width:328.016px;height:444.984px;}
+    #wrap #main #section1 .wrap .ani-3 > a {display:block;}
+    #wrap #main #section1 .wrap .ani-3 > a > img {width:100%;height:100%;}
+    /* 사진 제목 */
+    #wrap #main #section1 .wrap .ani-3 > strong {position:absolute;bottom:410px;left:20px;width:124.016px;height:80.094px;}
+    #wrap #main #section1 .wrap .ani-3 > strong > img {width:100%;} 
+    /* 음료 사진 */
+    #wrap #main #section1 .wrap .ani-4 {position:absolute;display:block;bottom:28px;right:-93px;width:304.031px;height:503.797px;}
+    #wrap #main #section1 .wrap .ani-4 > a {display:block;}
+    #wrap #main #section1 .wrap .ani-4 > a > img {width:100%;height:100%;}
+    /* 사진 제목 */
+    #wrap #main #section1 .wrap .ani-4 > strong {position:absolute;bottom:-2px;right:110px;width:206.031px;height:90.672px;}
+    #wrap #main #section1 .wrap .ani-4 > strong > img {width:100%;}
+    /* 사진 제목 */
+    #wrap #main #section1 .wrap .ani-5 > strong {position:absolute;top:72px;left:0px;width:382px;height:134px;}
+    #wrap #main #section1 .wrap .ani-5 > strong > img {width:100%;}
+    /* 사진 제목 */
+    #wrap #main #section1 .wrap .ani-6 > a {position:absolute;top:247px;left:0px;display:block;line-height:14px;font-size:13px;padding:8px 24px;border:2px solid #fff;color:#fff;border-radius:4px;font-weight:500;} 
+    #wrap #main #section1 .wrap .ani-6 > a:hover {background:#e5bb95;color:#111;text-decoration:underline;} 
 
-/* section2 */
-#wrap #main #section2 {width:100%;}
-#wrap #main #section2 > ul {width:100%;} /* > = 절대경로 */
-#wrap #main #section2 > ul > li {float:left;width:50%;height:62px;} /* 박스블록은 높이가 없으면 사각형이 안되니까 브라우저에 안나옴 */
-#wrap #main #section2 > ul > li:nth-child(1) {background:#000;}
-#wrap #main #section2 > ul > li:nth-child(2) {background:#f6f5ef;}
+    /* section2 */
+    #wrap #main #section2 {width:100%;}
+    #wrap #main #section2 > ul {width:100%;} /* > = 절대경로 */
+    #wrap #main #section2 > ul > li {float:left;width:50%;height:62px;} /* 박스블록은 높이가 없으면 사각형이 안되니까 브라우저에 안나옴 */
+    #wrap #main #section2 > ul > li:nth-child(1) {background:#000;}
+    #wrap #main #section2 > ul > li:nth-child(2) {background:#f6f5ef;}
 
-/* section3 */
-#wrap #main #section3 {display:none;width:100%;height:658px;border-top:1px solid #f6f5ef;background:#f6f5ef;}
+    /* section3 */
+    #wrap #main #section3 {display:none;width:100%;height:658px;border-top:1px solid #f6f5ef;background:#f6f5ef;}
 
-/* section4 */
-#wrap #main #section4 {width:100%;height:167px;padding:30px 0 40px 0;background:#1e3932;}/* padding, margin, font 등 한줄로 쓸수있는건 한줄로쓰기 */
+    /* section4 */
+    #wrap #main #section4 {width:100%;height:167px;padding:30px 0 40px 0;background:#1e3932;}/* padding, margin, font 등 한줄로 쓸수있는건 한줄로쓰기 */
 
-/* section5 */
-#wrap #main #section5 {width:100%;height:573px;background:url(../img/section5.jpg) no-repeat 50% 0;background-size:cover;}
+    /* section5 */
+    #wrap #main #section5 {width:100%;height:573px;background:url(../img/section5.jpg) no-repeat 50% 0;background-size:cover;}
 
-/* section6 */
-#wrap #main #section6 {width:100%;height:400px;background:#f4eed9;}
+    /* section6 */
+    #wrap #main #section6 {width:100%;height:400px;background:#f4eed9;}
 
-/* section7 */
-#wrap #main #section7 {width:100%;height:800px;background:url(../img/section7.jpg) no-repeat 50% 0/* position:(양 옆 50%, 위에 고정 0) */ fixed;background-image:cover;}
+    /* section7 */
+    #wrap #main #section7 {width:100%;height:800px;background:url(../img/section7.jpg) no-repeat 50% 0/* position:(양 옆 50%, 위에 고정 0) */ fixed;background-image:cover;}
 
-/* section8 */
-#wrap #main #section8 {width:100%;height:695px;background:#fff;}
+    /* section8 */
+    #wrap #main #section8 {width:100%;height:695px;background:#fff;}
 
-/* section9 */
-#wrap #main #section9 {width:100%;height:400px;background:url(../img/section9.jpg) repeat 50% 0;}
+    /* section9 */
+    #wrap #main #section9 {width:100%;height:400px;background:url(../img/section9.jpg) repeat 50% 0;}
 
-/* footer */
-#wrap #footer {z-index:1;position:relative;width:100%;height:488px;padding:32px 0 35px;/* = 32px 0 35px 0 */background:#2c2a29;}
+    /* footer */
+    #wrap #footer {z-index:1;position:relative;width:100%;height:488px;padding:32px 0 35px;/* = 32px 0 35px 0 */background:#2c2a29;}
